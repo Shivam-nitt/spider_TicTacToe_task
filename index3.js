@@ -73,23 +73,20 @@ function CheckWin(){
 
           if(e[0]===0&&e[1]===1&&e[2]===2){
             line.style.display="block";
-            line.style.top="150px";
-            line.style.transform="translate(0px,0px)";
+            line.style.transform="translate(-125px,-135px)";
 
           }
 
           //line for 2nd row
           if(e[0]===3&&e[1]===4&&e[2]===5){
             line.style.display="block";
-            line.style.top="150px";
-            line.style.transform="translate(0px,150px)";
+            line.style.transform="translate(-125px,15px)";
           }
 
           //line for 3rd row
           if(e[0]===6 && e[1]===7 && e[2]===8){
             line.style.display="block";
-            line.style.top="150px";
-            line.style.transform="translate(0px,300px)";
+            line.style.transform="translate(-125px,165px)";
 
           }
 
@@ -97,26 +94,23 @@ function CheckWin(){
         
           if(e[0]===0 && e[1]===3 && e[2]===6){
             line.style.display="block";
-            line.style.top="00px";
+            line.style.transform="translate(15px,270px)";
             line.style.rotate="90deg";
-            line.style.transform="translate(300px,150px)";
+           
           }
 
           //line for 2nd column
   
           if(e[0]===1 && e[1]===4 && e[2]===7){
             line.style.display="block";
-            line.style.top="00px";
             line.style.rotate="90deg";
-            line.style.transform="translate(300px,0px)";
+            line.style.transform="translate(15px,120px)";
           }
 
           //line for 3rd column
            
           if(e[0]===2 && e[1]===5 && e[2]===8){
-            line.style.top="0px";
-            
-            line.style.transform="translate(300px,-150px)";
+            line.style.transform="translate(15px,-30px)";
             line.style.rotate="90deg";
             line.style.display="block";
           }
@@ -125,20 +119,18 @@ function CheckWin(){
 
           if(e[0]===0 && e[1]===4 && e[2]===8){
             line.style.display="block";
-            line.style.top="00px";
             line.style.rotate="45deg";
-            line.style.width="500px";
-            line.style.transform="translate(200px,208px)";
+            line.style.width="550px";
+            line.style.transform="translate(-80px,98px)";
           }
 
           //line for 2nd diagonal
 
           if(e[0]===2 && e[1]===4 && e[2]===6){
             line.style.display="block";
-            line.style.top="00px";
-            line.style.width="500px";
+            line.style.width="550px";
             line.style.rotate="-45deg";
-            line.style.transform="translate(-200px,208px)";
+            line.style.transform="translate(-100px,-72px)";
           }
     } 
 })}
@@ -209,4 +201,6 @@ function Timer(){
    }
 }
 Timer();
+
+//1st problem im facing problem in applying draw condition and timer
 //2nd problem when im resetting the game then im not able to add event listener on the previous clicked boxes
